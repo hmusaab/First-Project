@@ -1,0 +1,134 @@
+
+/*star selector is used to give style to all elements*/
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+
+
+
+}
+
+
+/*now make the navbar class*/
+
+.navbar{
+    position: sticky;  /*sticky is always relevant and will always stick to the top*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    background: burlywood;
+    z-index:9;  /*always set it to the highest number so the navbar is above everything*/
+
+}
+
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand{
+    width:200px;
+    height:100px;
+    
+}
+
+.nav-items{
+    display: flex;
+    align-items: center; /*--put display on flex so you can align the items in the center*/
+
+ 
+}
+
+.search{
+    width: 500px;
+    display: flex;
+}
+
+
+
+.searchbox{
+    width: 80%;
+    height: 40px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid black;
+    text-transform: capitalize;
+    background: none;
+    color: black;
+    outline: none;
+    /*this will remove the chromes default black outline*/
+}
+
+.button{
+    width: 20%;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: green;
+    text-transform: capitalize;
+    font-size: 15px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+
+     
+}
+
+
+.searchbox::placeholder{
+    color:#a9a9a9;
+
+}
+
+.nav-items{
+    margin-left: 40px;
+}
+
+.nav-items a img{
+    width: 30px;
+}
+
+
+.link-container{
+    width:100%;
+    display:flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #a9a9a9;
+
+
+}
+
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none; /*this will remove the underline*/
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s; /*for smooth effect*/
+
+    
+}
+
+/*how to hover*/
+.link:hover{
+    opacity: 1;
+}
+
+
+.login{
+    height: 60px;
+}
+

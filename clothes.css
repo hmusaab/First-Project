@@ -1,0 +1,307 @@
+@import 'nav.css';
+
+/*adding a background image*/
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px); /*always add space*/
+    background-image: url('blur.avif');
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+
+
+}
+
+/*calc is a css function used to calculate values 
+in this case we want the section height to be 100vh(viewport height) - 120pixels
+to add a background image to it*/
+
+
+.content{
+    height: 40pc;
+    
+}
+
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+   
+    
+
+}
+
+.hero-section .sub-heading{
+        margin-top: 20px;
+        right: 15px;
+        text-align: center;
+        text-transform: capitalize;
+        font: caption;
+        font-size: 35px;
+        font-weight: 300;
+        color: brown;
+
+
+}
+
+
+
+/*stuff class*/
+
+.stuff{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+
+
+}
+
+.stuff-category{
+    padding: 0 35vw;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 46px;
+    text-transform: capitalize;
+}
+
+
+.stuff-product{
+    padding: 0 10vw;  /*how to move it more to the right*/
+    display: flex;
+    overflow-x: auto;
+    /*auto: Similar to scroll, but a scrollbar will be displayed only when necessary. 
+    If the content fits within the element, no scrollbar will be shown.*/
+    scroll-behavior: smooth;
+
+}
+
+.stuff-product::-webkit-scrollbar{
+    display: none;
+}
+
+
+.cards-for-stuff{
+    flex: 0 0 auto;
+    width: 250px;
+    height: 450px;
+    margin-right: 40px;
+}
+
+
+
+.picture-of-stuff{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden; 
+   
+
+}
+
+
+.example{
+    width: 100%;
+    height: 350px;
+    object-fit: cover; /*makes da picture like
+    not lookiin weird*/
+    
+}
+
+
+/*styling the discount*/
+.discountssadly{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+    
+}
+
+
+/*button for card*/
+
+.btn-for-card{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%); /*use translate x minus 
+    50 to align the button the center on x-axis*/
+    padding: 10%;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0; /*set its opacity to zero and set 
+    it back to one on hover the product card*/
+}
+
+.btn-for-card:hover{
+    opacity: 1;
+
+}
+
+/*add hover effect for button*/
+
+
+.btn-for-card:hover{
+    background-color: seashell;
+}
+
+.info-for-stuff{
+    width:100%;
+    height: 100px;
+    padding-top: 10px;
+    
+    
+  
+
+
+}
+
+.brand-for-stuff{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-left: 100px; /*moves the words to the right for some reason*/
+}
+
+.price{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+
+
+.actual-price{
+    margin-left: 20px;
+    opacity: 0.5s;
+    text-decoration: line-through; /*declaration for txt to cross it*/
+
+
+
+}
+
+
+
+.prev-btn,.next-btn{
+    border: none;
+    width: 10vw;  /*vw is */
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display:flex;
+    justify-self: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+
+}
+
+
+
+.prev-btn{
+    background-color: #fff;
+    left: 0;
+    transform: rotate(180deg);
+
+
+ 
+ 
+    
+
+
+    
+
+
+
+}
+.next-btn{
+    background-color: white;
+    right: 0;
+
+}
+
+
+
+/*this how to make the prev and next button look shady */
+
+.prev-btn:hover{
+    background-color: wheat;
+    opacity: 1;
+}
+
+
+.next-btn:hover{
+    background-color: wheat;
+    opacity: 1;
+}
+
+
+.next-btn img{
+    opacity: 0.2;
+
+}
+.prev-btn img{
+    opacity: 0.2;
+}
+.next-btn:hover img{
+    opacity: 1;
+
+}
+.prev-btn:hover img{
+    opacity: 1;
+
+}
+
+
+/*collection*/
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);    /*fractional unit(helps make pics side to side*/
+    grid-gap: 10px;
+}
+.collection{
+    position: relative;
+}
+
+
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.collection-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    text-align: center;
+    color: wheat;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-transform: capitalize;
+    
+}
+
+/*nth child is used to select nth number of element, so 
+basically in this case we have three photos, u can choose any of the three
+im picking third to make it fit two columns*/
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+
+}
