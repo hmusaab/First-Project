@@ -1,0 +1,28 @@
+.footer{
+    position: relative;
+    width: 100%;
+    padding:40px 10vw;
+    padding-bottom: 80px;
+    background: black;
+    
+
+}
+.social{
+    font-size: 120%;
+    margin-left: 440px;
+    text-transform: capitalize; 
+    text-decoration: underline;
+    color: white;   
+
+}
+.linked{
+    
+    text-transform: capitalize;
+    margin-left: 410px;
+    position: absolute;
+    font-size: large;
+    font-family:cursive;
+
+
+   
+}

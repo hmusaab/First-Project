@@ -306,29 +306,3 @@ im picking third to make it fit two columns*/
 
 }
 
-
-.footer{
-    margin-right: 10%;
-
-    
-
-}
-.social{
-    font-size: 120%;
-    margin-left: 50px;
-    text-transform: capitalize; 
-    text-decoration: underline;   
-
-}
-.linked{
-    
-    text-transform: capitalize;
-    margin-right: 10px;
-    margin-left: 30px;
-    position: absolute;
-    font-size: large;
-    font-family:cursive;
-
-
-   
-}
