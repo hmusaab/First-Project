@@ -305,3 +305,24 @@ im picking third to make it fit two columns*/
     margin-bottom: 10px;
 
 }
+
+
+.footer{
+    
+
+}
+.social{
+    font-size: 120%;
+    text-align: center;
+    text-transform: capitalize; 
+    text-decoration: underline;   
+
+}
+.linked{
+    
+    text-transform: capitalize;
+    margin-left: 458px;
+    position: absolute;
+
+   
+}
