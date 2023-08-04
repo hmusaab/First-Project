@@ -308,12 +308,14 @@ im picking third to make it fit two columns*/
 
 
 .footer{
+    margin-right: 10%;
+
     
 
 }
 .social{
     font-size: 120%;
-    text-align: center;
+    margin-left: 50px;
     text-transform: capitalize; 
     text-decoration: underline;   
 
@@ -321,8 +323,12 @@ im picking third to make it fit two columns*/
 .linked{
     
     text-transform: capitalize;
-    margin-left: 458px;
+    margin-right: 10px;
+    margin-left: 30px;
     position: absolute;
+    font-size: large;
+    font-family:cursive;
+
 
    
 }
