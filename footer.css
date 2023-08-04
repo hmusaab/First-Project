@@ -3,7 +3,7 @@
     width: 100%;
     padding:40px 10vw;
     padding-bottom: 80px;
-    background: black;
+    background: grey;
     
 
 }
@@ -12,16 +12,18 @@
     margin-left: 1510px;
     text-transform: capitalize; 
     text-decoration: underline;
-    color: white;   
+    color: black;  
 
 }
 .linked{
     
     text-transform: capitalize;
     margin-left: 1500px;
+    color: #000;
     position: absolute;
     font-size: large;
     font-family:cursive;
+    
 
 
    
