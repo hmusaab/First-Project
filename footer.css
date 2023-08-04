@@ -9,7 +9,7 @@
 }
 .social{
     font-size: 120%;
-    margin-left: 440px;
+    margin-left: 1120px;
     text-transform: capitalize; 
     text-decoration: underline;
     color: white;   
@@ -18,7 +18,7 @@
 .linked{
     
     text-transform: capitalize;
-    margin-left: 410px;
+    margin-left: 1100px;
     position: absolute;
     font-size: large;
     font-family:cursive;
