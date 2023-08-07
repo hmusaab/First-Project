@@ -8,6 +8,7 @@ it in a class to edit it-->
             <meta name = "viewport" content = "width=device width,initial-scale =1.0"/>
             <link rel = "stylesheet" href="clothes.css"/>
             <link rel = "stylesheet" href="footer.css"/>
+     
             
             <title>StraightUp Yurr</title>
         </head>
@@ -37,7 +38,7 @@ it in a class to edit it-->
                             <span class = "discountssadly">20% off</span>
                             <img src = "chink-PhotoRoom.png-PhotoRoom.png" class = "example" alt = "">
                             <!--build a button-->
-                            <button class = "btn-for-card">add to cart</button>
+                            <button onclick = "clickcardbtn()" class = "btn-for-card" data-product-id="1">add to cart</button>
                             
                         </div>
                         <div class = "info-for-stuff">
@@ -48,6 +49,9 @@ it in a class to edit it-->
                         </div>
                     </div>
                     <div class = "cards-for-stuff">
+                        <h2 class="product-name">Product Name</h2>
+                        <p class="product-description"></p>
+                        <p class="product-price">
                         <div class = "picture-of-stuff">
                             <span class = "discountssadly">97% off</span>
                             <img src = "clothes2-removebg-preview.png" class = "example" alt = "">
@@ -161,7 +165,7 @@ it in a class to edit it-->
 
             </section>
             <section class = "stuff">
-                <h2 class = "stuff-category">Men</h2>
+                <h2 class = "stuff-category"><a href = "https://hmusaab.github.io/First-Project/#" class = "Linkwork">Men</a></h2>
                  <!--making a prev and nxt button-->
                 <button class = "prev-btn"><img src = "prev-btn-removebg-preview.png" alt = ""></button>
                 <button class = "next-btn"><img src = "nxt-btn-removebg-preview.png" alt = ""></button>
@@ -756,6 +760,7 @@ it in a class to edit it-->
 
             <script src = "desktop.js"></script>
             <script src = "home.js"></script>
+            <script src = "cart-btn.js"></script>
 
         </body>
 
