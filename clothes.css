@@ -130,7 +130,7 @@ to add a background image to it*/
     position: absolute;
     bottom: 10px;
     left: 50%;
-    transform: translate(-50%); /*use translate x minus 
+    transform: translate(-50%); /*use translate  minus 
     50 to align the button the center on x-axis*/
     padding: 10%;
     width: 90%;

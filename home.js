@@ -10,7 +10,7 @@ const prev = [...document.querySelectorAll('.prev-btn')];
 
 
 stuffproducts.forEach((items, i) => {
-    //store the card dimension thru items//
+    //store the stuff dimension thru items//
     //store the stuff width to the stuff dimension//
     let stuffDimension = items.getBoundingClientRect();
     let stuffWidth = stuffDimension.width;
