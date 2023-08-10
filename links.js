@@ -12,10 +12,10 @@ function ShowMe(Destination){ //learnt from c++
         case 'accessories':
             window.location.href = "https://hmusaab.github.io/FeedbackHub/";
             break; 
-        case 'Women':
+        case 'women':
             window.location.href = "https://hmusaab.github.io/Captures/";
             break; 
-        case 'Kids':
+        case 'kids':
             window.location.href = "https://hmusaab.github.io/kidspart/";
             break;
           // Default action (if no valid destination is provided)
