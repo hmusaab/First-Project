@@ -11,7 +11,7 @@
     font-size: 120%;
     margin-left: 1510px;
     text-transform: capitalize; 
-    text-decoration: none
+    text-decoration: none;
     color: black;  
 
 }
@@ -24,6 +24,7 @@
     font-size: large;
     font-family:sans-serif;
     font-style: initial;
+    text-decoration: none;
    
 
 
