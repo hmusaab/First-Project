@@ -17,6 +17,10 @@ function ShowMe(Destination){ //learnt from c++
             break; 
         case 'kids':
             window.location.href = "https://hmusaab.github.io/kidspart/";
+
+            break;
+        case "termsandservices":
+            window.location.href = "";
             break;
           // Default action (if no valid destination is provided)
         default:

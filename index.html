@@ -9,7 +9,39 @@ it in a class to edit it-->
             <link rel = "stylesheet" href="clothes.css"/>
             <link rel = "stylesheet" href="footer.css"/>
             <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" href = "footer.css"/>
-     
+            <script>
+                // JavaScript code here
+                document.addEventListener("DOMContentLoaded", function() {
+                    const addCardBtns = document.querySelectorAll('.btn-for-card');
+                    const cart = [];
+        
+                    addCardBtns.forEach(button => {
+                        button.addEventListener('click', () => {
+                            const item = button.parentElement.parentElement.querySelector('.brand-for-stuff').innerText;
+                            addToCart(item);
+                        });
+                    });
+        
+                    function addToCart(item) {
+                        cart.push(item);
+                        alert("Added to cart");
+                    }
+        
+                    // Function to remove an item from the cart
+                    function removeFromCart(index) {
+                        cart.splice(index, 1);
+                    }
+        
+                    // Example function to display cart contents
+                    function displayCart() {
+                        cartContainer.innerHTML = "";
+                        console.log("Items in cart:");
+                        cart.forEach((item, index) => {
+                            console.log(`${index + 1}. ${item}`);
+                        });
+                    }
+                });
+            </script>
             
             <title>StraightUp Yurr</title>
         </head>
@@ -144,8 +176,14 @@ it in a class to edit it-->
                 </div>
 
             </section>
-
-            <!--collection-->
+        
+    <section id="cart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+        </section>
+            
+        
+        <!--collection-->
             <section class = "collection-container">
                 <a href= "#" class = "collection">
                     <img src = "mens collection.jpg" alt = " ">
@@ -160,8 +198,13 @@ it in a class to edit it-->
                     <p class = "collection-title">Accessories<br>stuff</p>
                 </a>
                 
+                
 
             </section>
+     
+
+       
+
             <section class = "stuff">
                 <h2 class = "stuff-category">Men</h2>
                  <!--making a prev and nxt button-->
@@ -751,13 +794,14 @@ it in a class to edit it-->
                 <p class= " long-stuff">asf and we not me we need your help to save us from being broke, every somewhat</p><p class = "long-stuff">percentage of people, they broke asf, so I need your help to not make me one of those ppls</p><p class= "long-stuff">any donation would be much appreciated <3</p>
             
                 <p class = "social">socials</p>
-                <a href = "https://www.instagram.com/_baasum1/" alt = "" class = "linked">Muse Instagram</a>
+                <a href = "https://www.instagram.com/_baasum1/" alt = "" class = "linked">Instagram</a>
                 <br>
-                <a href = "https://twitter.com/_baasum" alt = "" class = "linked">Muse Twitter</a>
+                <a href = "https://twitter.com/_baasum" alt = "" class = "linked">Twitter</a>
                 <br>
-                <a href = "https://www.tiktok.com/@_baasum" alt = "" class = "linked">Muse TikTok</a>
-               
-                
+                <a href = "https://www.tiktok.com/@_baasum" alt = "" class = "linked">TikTok</a>
+                <br>
+                <a href = "https://www.linkedin.com/in/musaab-hafiz-74803628a/" alt ="" class = "linked">Linkedln</a>
+                <p class = "Copyright">&copy; 2024 StraightUp Yurr</p>
                
             </footer>
 
@@ -766,7 +810,7 @@ it in a class to edit it-->
             <script src = "home.js"></script>
             <script src = "cart-btn.js"></script>
             <script src = "links.js"></script>
-
+            
         </body>
 
 
