@@ -20,10 +20,10 @@ function ShowMe(Destination){ //learnt from c++
 
             break;
         case "ContactUs":
-            window.location.href = "http://127.0.0.1:3000/ContactUs/index.html";
+            window.location.href = "https://hmusaab.github.io/Contact2/";
             break;
         case "TermsAndServices":
-            window.location.href = "http://127.0.0.1:3000/AnimatedPage/index.html"
+            window.location.href = "https://hmusaab.github.io/Terms/"
           // Default action (if no valid destination is provided)
         default:
             break;
